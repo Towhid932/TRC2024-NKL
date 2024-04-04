@@ -4,72 +4,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
   <title>TRC-2024, NKL</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
   <div>
     <div class="hedar">
       <div class="hleft">
-        <img src="police_logo.png" alt="BD Police">
+        <img src="img/police_logo.png" alt="BD Police" class="logo">
       </div>
-      <div class="hmid"><h1>Trainee Recruit Constable Recruitment, January 2024</h1>
-      <h2>NOAKHALI</h2></div>
-      <div class="hleft">
-        <img src="" alt="NKL">
+      <div class="hmid">
+        <h1>Trainee Recruit Constable Recruitment, January 2024</h1>
+      <p>Reserve Office, Noakhali</p>
+      </div>
+      <div class="hright">
+        <img src="img/nkllogo.jpg" alt="NKL" class="logo">
       </div>
     </div>
-    <h4> সার্ভার এখনো চালু হয়নি । সার্ভার চালু হলে আপনার তথ্য এন্ট্রি দিবেন।</h4>
+      <div class="text-wrapper">
+          <span>বার্তা</span>
+        <marquee scrollamount="4">ট্রেইনি রিক্রুট কনস্টেবল (টিআরসি) নিয়োগ, জানুয়ারি ২০২৪খ্রি. রিজার্ভ অফিস, নোয়াখালীর সাইটে আপনাকে স্বাগতম। কোন সমস্য বা না বুঝলে ০১৬৪১৬৬৩৫৯৬ নাম্বারে যোগাযোগ করুন। ধন্যবাদ.....</marquee>
+ 
+      </div>
+      
+    <nav>
+<button class="button button1"><a href="googleToHtmlShow.html">Submited List</a></button>
+<button class="button button2 btn--show-modal" href="#">Blue</button>
+<button class="button button3">Red</button>
+<button class="button button4">Gray</button>
+<button class="button button5">Black</button>
+    </nav>
+    
+    <h4>Data Enty Form, Noakhali, TRC 2024</h4>
+    
+    
     <div class="form">
-      <h4>NKL, TRC 2024 Data Enty Form</h4>
+       <form name="submit-to-google-sheet">
       <label for="PetId">PET ID: </label>
-      <input type="number" name="PetId"<br>
+      <input type="tel" name="PetId" minlength=9 maxlength="9" required placeholder="Physical endurance test ID"><br>
+      <label for="Roll">Roll: </label>
+      <input type="tel" name="Roll" minlength=7 maxlength="7" required placeholder="Writing Roll"><br>
       <label for="Name">Full Name: </label>
-      <input type="text" name="Name"><br>
-       <label for="ps">P/S: </label>
-       <select name="ps" id="ps">ps
-       <option value="ps1">Sudaram</option>
-       <option value="pps2">Begumganj</option>
-       <option value="ps3">Chatkil</option>
-       <option value="pps4">Sonaimori</option>
-       <option value="ps5">Kobirhat</option>
-       <option value="pp62">Senbag</option>
-       <option value="ps7">Companygong</option>
-       <option value="pps8">Chorjobbor</option>
-       <option value="pps9">Hatiya</option>
+      <input type="text" name="Name" required placeholder="Full Name"><br>
+       <label for="Ps">P/S: </label>
+       <select name="Ps" id="ps">
+       <option value="Select">--Select--</option>
+       <option value="Sudharam">Sudharam</option>
+       <option value="Begumganj">Begumganj</option>
+       <option value="Chatkhil">Chatkhil</option>
+       <option value="Sonaimuri">Sonaimuri</option>
+       <option value="Senbagh">Senbagh</option>
+       <option value="Companiganj">Companiganj</option>
+       <option value="Kabirhat">Kabirhat</option>
+       <option value="Charjabbar">Charjabbar</option>
+       <option value="Hatiya">Hatiya</option>
        </select><br>
        <label for="Gendar">Gendar: </label>
        <select name="Gendar" id="gendar">
-         <option value="gm">Male</option>
-         <option value="gf">Femail</option>
+         <option value="Select">--Select--</option>
+         <option value="Male">Male</option>
+         <option value="Femail">Femail</option>
        </select><br>
        <label for="Quota">Quota: </label>
-       <select name="Quota" id="quota">ps
-         <option value="g">General</option>
-         <option value="FF">Freedom Fighter</option>
-         <option value="Or">Orphan</option>
-           <option value="AV">Ansar/VDP</option>
-             <option value="Tr">Tribal</option>
-               <option value="PW"> Police (Ward)</option>
+       <select name="Quota" id="quota">
+         <option value="qu0">--Select--</option>
+         <option value="General">General</option>
+         <option value="Freedom Fighter">Freedom Fighter</option>
+         <option value="Orphan">Orphan</option>
+           <option value="Ansar/VDP">Ansar/VDP</option>
+             <option value="Tribal">Tribal</option>
+               <option value="Police (Ward)"> Police (Ward)</option>
        </select><br>
-        <label for="Mobile">What's app Number: </label>
-        <input type="number" name="PetId" <br>
-        <input id="submit" type="submit">
+       <label for="Board">SSC Board: </label>
+       <select name="Board" id="ps">
+         <option value="Select">--Select--</option>
+         <option value="Dhaka">Dhaka</option>
+         <option value="Chittagong">Chittagong</option>
+         <option value="Comilla">Comilla</option>
+         <option value="Jessore">Jessore</option>
+         <option value="Rajshahi">Rajshahi</option>
+         <option value="Mymensingh">Mymensingh</option>
+         <option value="Sylhet">Sylhet</option>
+         <option value="Dinajpur">Dinajpur</option>
+         <option value="Barisal">Barisal</option>
+         <option value="Madrasah">Madrasah</option>
+         <option value="Technical">Technical</option>
+         <option value="DIBS(Dhaka)">DIBS(Dhaka)</option>
+         <option value="Others">Others</option>
+       </select><br>
+       <label for="Mobile">What's app Number: </label>
+       <input type="tel" name="Mobile" minlength="11" maxlength="11" required placeholder="What's app mobile number"><br>
+        <input id="submit" type="submit" name="submit">
+        <span id="success"></span>
+        </form>
     </div>
-    <div class="footer">
-      <div class="fleft">
-        <ol>
-          <a href="https://www.facebook.com/Towhid261?mibextid=ZbWKwL">Facebook</a>
-        </ol>
-        
+    <div class="nbnb">
+      
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="https://www.facebook.com/Towhid261?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    
+        <div class="row">
+          <ul>
+            <li><a href="#" class="btn--show-modal">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+    
+        <div class="row">
+          TRC_NKL Copyright © 2024 TRC_NKL - All rights reserved || Designed By: Md. Towhidul Islam <br>Contact no:01641663596
+        </div>
       </div>
-      <div class="fright">
-        <span>TOWHIDUL ISLAM</span><br>
-        <span>Contact :01641663596 | 0101703713035</span>
-      </div>
+    </footer>
+  </div>
+    <!--modal-->
+<div class="modal hidden">
+  <button class="btn--close-modal">&times;</button>
+  <!--card -->
+
+  <div class="card-container">
+    <div class="card-image">
+      <img src="img/towhid.JPG" alt="TOWHID">
+    </div>
+    <div class="card-details">
+      <h2>MD. TOWHIDUL ISLAM</h2>
+      <p class="designation">Web Devloper</p>
+      <p>Reserve Office, Noakhali</p>
+      <p>Banglades Police</p>
+      <a href="#">Contact: 01641663596</a>
     </div>
   </div>
+  
+  <script>
+  const result=document.getElementById("result")
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzhbiiR2YxqYhJ9vNZLXxfUgVdV1kRcTAgoQfWUdB9iHa52Wu1YTC0Izjp-n1ppgsn2/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert('Thank You!!! Your data successfully  submitted!!✌️✌️', response))
+        
+        .catch(error => console.error('Error!', error.message))
+        alert("reset",form.reset())
+       
+    })
+  </script>
 
 </body>
 
