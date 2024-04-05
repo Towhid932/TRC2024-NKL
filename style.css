@@ -103,8 +103,10 @@ nav{
   background-color: #008CBA;
 } /* Blue */
   
-.button3 {background-color: #f44336;visibility: hidden;} /* Red */ 
-.button4 {background-color: #e7e7e7;visibility: hidden; color: black;} /* Gray */ 
+.button3 {background-color: #f44336;
+          /*: hidden;*/} /* Red */ 
+.button4 {background-color: #e7e7e7;
+          color: black;} /* Gray */ 
 .button5 {background-color: #555555;visibility: hidden;} /* Black */
  h4{
    margin-top: 15px;
