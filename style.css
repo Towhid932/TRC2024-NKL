@@ -30,6 +30,7 @@ body {
 }
 .hedar{
   display: flex;
+  justify-content:space-between;
   padding: 5px 5px;
   color: #fff;
   background: rgb(19, 27, 67)
@@ -103,7 +104,7 @@ nav{
 .button3 {background-color: #f44336;}
 .button4 {background-color: #e7e7e7;
           color: black;}
-.button5 {background-color: #555555;visibility: hidden;} /* Black */
+.button5 {background-color: #0f82e7;}
  h4{
    margin-top: 15px;
    margin-right: 10px;
@@ -112,10 +113,19 @@ nav{
   background-color: DodgerBlue;
   text-align: center;;
 }
+h6{
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+ padding: 5px;
+ background-color: rgb(38, 48, 57);
+ text-align: center;;
+}
 .form{
   margin: 0 10px;
   padding: 5px;
-  background: green;
+  background: #131B42;
+  color: whitesmoke;
 }
 
 input, select{
@@ -131,12 +141,6 @@ HTML CSS Result Skip Results Iframe
 body{
 margin:0;
 overflow-x:hidden;
-}
-.nbnb{
-  width: 360px;
-  height: 10px;
-  background: rebeccapurple;
-  
 }
 .footer{
 background:#000;
