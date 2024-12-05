@@ -130,13 +130,19 @@ h6{
 
 input, select{
   width: 100%;
-  padding-top: 5px;
+  padding: 2px;
 }
 #submit{
-  margin-top: 10px;
+  font-weight: 500;
+  padding: 5px;
   background: seagreen;
 }
-
+#submit:hover{
+  font-weight: 700;
+  padding: 5px;
+  background: rgb(7, 234, 105);
+  cursor: pointer;
+}
 HTML CSS Result Skip Results Iframe
 body{
 margin:0;
