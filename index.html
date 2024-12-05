@@ -42,23 +42,22 @@
 <button class="button button3"><a href="https://drive.google.com/file/d/109Uc6NqMkHjixKmQHvKOeLuccMoqY1ZM/view?usp=drive_link">Result:Viva</a></button>
 <button class="button button4 btn--show-modal" href="#">Dev</button>
 <button class="button button5"><a href="trcJan.html">TRC Jan 24</a></button>
-<button class="button button5" style="visibility: hidden;">Gray</button>
-<button class="button button5" style="visibility: hidden;">Gray</button>
+<button class="button button5">Login</button>
     </nav>
     
     <h6 style="font-size:18px;font-weight:bold;color:forestgreen">Data Enty Form, Noakhali, TRC September 2024</h6>
     
-    
-    <div class="form" style="visibility: hidden;">
+    <!-- style="visibility: hidden; -->
+    <div class="form"">
        <form name="submit-to-google-sheet">
       <label for="PetId">(PET) Serial No: </label>
-      <input type="tel" name="PetId" minlength=9 maxlength="9" required placeholder="Physical endurance test Serial no 9 Digit"><br>
+      <input type="tel" name="PET Serial" minlength=9 maxlength="9" required placeholder="Physical endurance test Serial no 9 Digit"><br>
       <label for="Roll">Roll: </label>
-      <input type="tel" name="Roll" minlength=7 maxlength="7" required placeholder="(Written Roll No 7 Digit)"><br>
+      <input type="tel" name="Roll No" minlength=7 maxlength="7" required placeholder="(Written Roll No 7 Digit)"><br>
       <label for="Name">Full Name: </label>
       <input type="text" name="Name" required placeholder="Full Name (English)"><br>
        <label for="Ps">P/S: </label>
-       <select name="Ps" id="ps">
+       <select name="PS" id="ps">
        <option value="Select">--Select--</option>
        <option value="Sudharam">Sudharam</option>
        <option value="Begumganj">Begumganj</option>
@@ -85,7 +84,7 @@
              <option value="Tribal">Tribal</option>
        </select><br>
        <label for="Board">SSC Board: </label>
-       <select name="Board" id="ps">
+       <select name="SSC Board" id="ps">
          <option value="Select">--Select--</option>
          <option value="Dhaka">Dhaka</option>
          <option value="Chittagong">Chittagong</option>
@@ -129,7 +128,7 @@
         </div>
     
         <div class="row">
-          TRC_NKL Copyright © 2024 TRC_NKL - All rights reserved || Designed By: Md. Towhidul Islam <br>Contact no:01641663596/01846103094
+          TRC_NKL Copyright © 2024 TRC_NKL - All rights reserved || Designed By: Md. Towhidul Islam <br>Contact No:01641663596/01846103094
         </div>
       </div>
     </footer>
@@ -153,20 +152,20 @@
   </div>
   
   <script>
-  const result=document.getElementById("result")
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwbNdvTKCL0nvcKo3J-CfonkD-nsyFVIFw0SfEPz2MELIs4dDAqngLWfQ3OZdbU9ZBS/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert('Thank You!!! Your data successfully  submitted!!✌️✌️', response))
-        
-        .catch(error => console.error('Error!', error.message))
-        alert("reset",form.reset())
-       
-    })
-  </script>
+    const result=document.getElementById("result")
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbynHBVT_2DuDj187-QwcTZGW_VDBFFTvjh5NX1C7VDjky2sMH5xP2_DAH0RbpMxx0ij/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => alert('ধন্যবাদ!!! আপনার তথ্যসমূহ জমা হয়েছে। ১:০০ঘন্টার মধ্যে আপনাকে TRC September 2024 Whatsapp গ্রুপে অ্যাড করা হবে।!!✌️✌️', response))
+          
+          .catch(error => console.error('Error!', error.message))
+          alert("আপনার তথ্য সঠিক? সঠিক থাকলে OK বাটনে ক্লিক করুন",form.reset())
+         
+      })
+    </script>
 
 </body>
 
